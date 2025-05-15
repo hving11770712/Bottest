@@ -14,7 +14,7 @@ keep_alive()
 
 # === CẤU HÌNH ===
 TOKEN = "7593769015:AAFAJtNU3KfItmmdp7Nj2Y1fC6OTGb_5kMU"
-ADMIN_ID = 6906617636 # ID admin chính
+ADMIN_ID = 7761915412 # ID admin chính
 activated_users = {}
 now = datetime.now().strftime("%H:%M:%S - %d/%m/%Y")
 
@@ -230,7 +230,7 @@ async def id_cmd(message: types.Message):
         "🆔 THÔNG TIN NGƯỜI DÙNG 🆔",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         f"👤 Tên: {name}",
-        f"🔢 ID: {uid}",
+        f"🔢 ID: `{uid}`",
         f"📊 Trạng Thái: {status}",
         f"⏰ Hạn Dùng: {exp}",
         f"⏰ Thời gian kiểm tra: {now}",
