@@ -247,7 +247,7 @@ async def add_user(message: types.Message):
         
     parts = message.text.split()
     if len(parts) != 3:
-        return await message.reply("❗ Dùng: /adduser <id> <số ngày|vĩnh>")
+        return await message.reply("❗ Dùng: /adduser <id> <số ngày|infinity>")
 
     user_id = parts[1]
     days = parts[2]
