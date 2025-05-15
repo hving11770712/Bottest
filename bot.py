@@ -230,7 +230,7 @@ async def id_cmd(message: types.Message):
         "🆔 THÔNG TIN NGƯỜI DÙNG 🆔",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         f"👤 Tên: {name}",
-        f"🔢 ID: {uid}",
+        f"🔢 ID: <code>{uid}</code>",
         f"📊 Trạng Thái: {status}",
         f"⏰ Hạn Dùng: {exp}",
         f"⏰ Thời gian kiểm tra: {now}",
@@ -325,7 +325,7 @@ async def md5_handler(message: types.Message):
 
     reply_text = (
     f"<b>🎰 KẾT QUẢ PHÂN TÍCH MD5 🔮✨🌌🎰</b>\n\n"
-    f"🔮 <code>{message.text.lower()}</code>🔮\n"
+    f"🔮 Md5: <code>{message.text.lower()}</code>🔮\n"
     f"🔢 Số cuối: <b>{result['last_digit']}</b> | Entropy: <b>{result['entropy']}</b>\n"
     f"⚙️ Tỷ lệ bit 1:  <b>{result['bit_1_percentage']}%</b>\n"
     f"🔢 Tỷ lệ Hex ≥8: <b>{result['hex_8_percentage']}%</b>\n"
