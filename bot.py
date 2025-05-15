@@ -226,12 +226,11 @@ async def id_cmd(message: types.Message):
     is_ad = is_admin(uid)
     ok, exp = check_user(uid)
     status = "👑 Admin" if is_ad else ("✅ Đã kích hoạt" if ok else "❌ Chưa kích hoạt")
-    result = message.from_user.id(message.text.lower())
     text = [
         "🆔 THÔNG TIN NGƯỜI DÙNG 🆔",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         f"👤 Tên: {name}",
-        f"🔢 ID: {message.text.lower()}",
+        f"🔢 ID: {uid}",
         f"📊 Trạng Thái: {status}",
         f"⏰ Hạn Dùng: {exp}",
         f"⏰ Thời gian kiểm tra: {now}",
