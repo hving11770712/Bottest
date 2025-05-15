@@ -230,7 +230,7 @@ async def id_cmd(message: types.Message):
         "🆔 THÔNG TIN NGƯỜI DÙNG 🆔",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         f"👤 Tên: {name}",
-        f"🔢 ID: <code>{uid}</code>",
+        f"🔢 ID: <code>{message.from_user.id}</code> {uid}",
         f"📊 Trạng Thái: {status}",
         f"⏰ Hạn Dùng: {exp}",
         f"⏰ Thời gian kiểm tra: {now}",
